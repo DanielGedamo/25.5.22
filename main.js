@@ -189,22 +189,38 @@
 //   furniture.price =+prompt("מחיר");
 //   furniture.stors =prompt("חנויות");
 //   StoresArray.push(furniture.stors)
-//   document.write(furniture.name+"<br>"+StoresArray+"<br>")
+// //   document.write(furniture.name+"<br>"+StoresArray+"<br>")
   
-// };
-// }getFurniture(2)
-function getApartment (num){
-    ApartmentArray =[]
-    for(var i=0; i<num;i++){
-    var Apartment={}
-    Apartment.adress= prompt("adress?")
-    Apartment.price=+prompt("price?")
-    Apartment.buyprice= +prompt("buy price?")
-    Apartment.Buyer= confirm("Buyer?")
-    Apartment.IsThereaTranslation =prompt("Is there a translation?")
-    ApartmentArray.push(ApartmentBuyer)
-    document.write(Apartment.adress+"<br>"+Apartment.IsThereaTranslation)
-}
-}getApartment(2)
+// // };
+// // }getFurniture(2)
+// function getApartment (num){
+//     ApartmentArray =[]
+//     for(var i=0; i<num;i++){
+//     var Apartment={}
+//     Apartment.adress= prompt("adress?")
+//     Apartment.price=+prompt("price?")
+//     Apartment.buyprice= +prompt("buy price?")
+//     Apartment.Buyer= prompt("Buyer?")
+//     Apartment.IsThereaTranslation =confirm("Is there a translation?")
+//     ApartmentArray.push(Apartment.Buyer)
+//     if(Apartment.IsThereaTranslation == false){
+//     document.write(Apartment.adress+"<br>"+Apartment.Buyer)
+//     }
+// }
+// }getApartment(3)
+function getCountries (){
+    var CountriesArray =[]
+    var userNum =+prompt("enter num");
+    for (var i =0;i<userNum;i++ ){
+        var Countries ={}
+        Countries.name =prompt("enter youer countri name");
+        Countries.numberOfResidents =+prompt("enter number fo residents ");
+        Countries.ChabadHouse = confirm("ther is ?");
+        Countries.city =prompt("enter youer ciry")
+        if(Countries.ChabadHouse){
+            document.write(Countries.name+"<br>"+CountriesArray)
+        }
+    }
+}getCountries()
 
 
